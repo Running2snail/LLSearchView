@@ -1,0 +1,19 @@
+//
+//  LLSearchView.pch
+//  LLSearchView
+//
+//  Created by 王龙龙 on 2017/7/25.
+//  Copyright © 2017年 王龙龙. All rights reserved.
+//
+
+#ifndef LLSearchView_pch
+#define LLSearchView_pch
+
+#define KScreenWidth   [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight  [UIScreen mainScreen].bounds.size.height
+
+#define KHistorySearchPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"PYSearchhistories.plist"]
+
+#define KColor(r,g,b) [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:1.0]
+
+#endif /* LLSearchView_pch */

@@ -14,6 +14,19 @@
 		03552A7A1F26EE8A00518BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03552A791F26EE8A00518BD3 /* Assets.xcassets */; };
 		03552A7D1F26EE8A00518BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03552A7B1F26EE8A00518BD3 /* LaunchScreen.storyboard */; };
 		03552A881F26EE8A00518BD3 /* LLSearchViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03552A871F26EE8A00518BD3 /* LLSearchViewUITests.m */; };
+		03552A941F26EF0900518BD3 /* LLSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03552A931F26EF0900518BD3 /* LLSearchViewController.m */; };
+		03552A971F26EF9300518BD3 /* LLSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03552A961F26EF9300518BD3 /* LLSearchResultViewController.m */; };
+		03552A9A1F26EFCD00518BD3 /* LLSearchSuggestionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03552A991F26EFCD00518BD3 /* LLSearchSuggestionVC.m */; };
+		03552A9D1F26F02200518BD3 /* LLSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03552A9C1F26F02200518BD3 /* LLSearchView.m */; };
+		03552AA01F26F07B00518BD3 /* LLSearchResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03552A9F1F26F07B00518BD3 /* LLSearchResultView.m */; };
+		03552AA31F26F10100518BD3 /* LLSearchResultListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03552AA21F26F10100518BD3 /* LLSearchResultListViewCell.m */; };
+		03552AA61F26F12500518BD3 /* LLSearchResultDoubleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03552AA51F26F12500518BD3 /* LLSearchResultDoubleViewCell.m */; };
+		03552AAD1F26F1E200518BD3 /* leftImage220.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03552AA71F26F1E200518BD3 /* leftImage220.jpg */; };
+		03552AAE1F26F1E200518BD3 /* rightImage220.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03552AA81F26F1E200518BD3 /* rightImage220.jpg */; };
+		03552AAF1F26F1E200518BD3 /* leftImage345.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03552AA91F26F1E200518BD3 /* leftImage345.jpg */; };
+		03552AB01F26F1E200518BD3 /* rightImage345.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03552AAA1F26F1E200518BD3 /* rightImage345.jpg */; };
+		03552AB11F26F1E200518BD3 /* rightImage576.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03552AAB1F26F1E200518BD3 /* rightImage576.jpg */; };
+		03552AB21F26F1E200518BD3 /* leftImage576.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03552AAC1F26F1E200518BD3 /* leftImage576.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +53,27 @@
 		03552A831F26EE8A00518BD3 /* LLSearchViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLSearchViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03552A871F26EE8A00518BD3 /* LLSearchViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLSearchViewUITests.m; sourceTree = "<group>"; };
 		03552A891F26EE8A00518BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03552A921F26EF0900518BD3 /* LLSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSearchViewController.h; sourceTree = "<group>"; };
+		03552A931F26EF0900518BD3 /* LLSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSearchViewController.m; sourceTree = "<group>"; };
+		03552A951F26EF9300518BD3 /* LLSearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSearchResultViewController.h; sourceTree = "<group>"; };
+		03552A961F26EF9300518BD3 /* LLSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSearchResultViewController.m; sourceTree = "<group>"; };
+		03552A981F26EFCD00518BD3 /* LLSearchSuggestionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSearchSuggestionVC.h; sourceTree = "<group>"; };
+		03552A991F26EFCD00518BD3 /* LLSearchSuggestionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSearchSuggestionVC.m; sourceTree = "<group>"; };
+		03552A9B1F26F02200518BD3 /* LLSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSearchView.h; sourceTree = "<group>"; };
+		03552A9C1F26F02200518BD3 /* LLSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSearchView.m; sourceTree = "<group>"; };
+		03552A9E1F26F07B00518BD3 /* LLSearchResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSearchResultView.h; sourceTree = "<group>"; };
+		03552A9F1F26F07B00518BD3 /* LLSearchResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSearchResultView.m; sourceTree = "<group>"; };
+		03552AA11F26F10100518BD3 /* LLSearchResultListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSearchResultListViewCell.h; sourceTree = "<group>"; };
+		03552AA21F26F10100518BD3 /* LLSearchResultListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSearchResultListViewCell.m; sourceTree = "<group>"; };
+		03552AA41F26F12500518BD3 /* LLSearchResultDoubleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSearchResultDoubleViewCell.h; sourceTree = "<group>"; };
+		03552AA51F26F12500518BD3 /* LLSearchResultDoubleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSearchResultDoubleViewCell.m; sourceTree = "<group>"; };
+		03552AA71F26F1E200518BD3 /* leftImage220.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leftImage220.jpg; sourceTree = "<group>"; };
+		03552AA81F26F1E200518BD3 /* rightImage220.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rightImage220.jpg; sourceTree = "<group>"; };
+		03552AA91F26F1E200518BD3 /* leftImage345.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leftImage345.jpg; sourceTree = "<group>"; };
+		03552AAA1F26F1E200518BD3 /* rightImage345.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rightImage345.jpg; sourceTree = "<group>"; };
+		03552AAB1F26F1E200518BD3 /* rightImage576.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rightImage576.jpg; sourceTree = "<group>"; };
+		03552AAC1F26F1E200518BD3 /* leftImage576.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leftImage576.jpg; sourceTree = "<group>"; };
+		03552AB31F26F23300518BD3 /* LLSearchView.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLSearchView.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +119,30 @@
 				03552A711F26EE8900518BD3 /* AppDelegate.m */,
 				03552A731F26EE8900518BD3 /* ViewController.h */,
 				03552A741F26EE8900518BD3 /* ViewController.m */,
+				03552A921F26EF0900518BD3 /* LLSearchViewController.h */,
+				03552A931F26EF0900518BD3 /* LLSearchViewController.m */,
+				03552A951F26EF9300518BD3 /* LLSearchResultViewController.h */,
+				03552A961F26EF9300518BD3 /* LLSearchResultViewController.m */,
+				03552A981F26EFCD00518BD3 /* LLSearchSuggestionVC.h */,
+				03552A991F26EFCD00518BD3 /* LLSearchSuggestionVC.m */,
+				03552A9B1F26F02200518BD3 /* LLSearchView.h */,
+				03552A9C1F26F02200518BD3 /* LLSearchView.m */,
+				03552A9E1F26F07B00518BD3 /* LLSearchResultView.h */,
+				03552A9F1F26F07B00518BD3 /* LLSearchResultView.m */,
+				03552AA11F26F10100518BD3 /* LLSearchResultListViewCell.h */,
+				03552AA21F26F10100518BD3 /* LLSearchResultListViewCell.m */,
+				03552AA41F26F12500518BD3 /* LLSearchResultDoubleViewCell.h */,
+				03552AA51F26F12500518BD3 /* LLSearchResultDoubleViewCell.m */,
 				03552A761F26EE8900518BD3 /* Main.storyboard */,
+				03552AA71F26F1E200518BD3 /* leftImage220.jpg */,
+				03552AA81F26F1E200518BD3 /* rightImage220.jpg */,
+				03552AA91F26F1E200518BD3 /* leftImage345.jpg */,
+				03552AAA1F26F1E200518BD3 /* rightImage345.jpg */,
+				03552AAB1F26F1E200518BD3 /* rightImage576.jpg */,
+				03552AAC1F26F1E200518BD3 /* leftImage576.jpg */,
 				03552A791F26EE8A00518BD3 /* Assets.xcassets */,
 				03552A7B1F26EE8A00518BD3 /* LaunchScreen.storyboard */,
+				03552AB31F26F23300518BD3 /* LLSearchView.pch */,
 				03552A7E1F26EE8A00518BD3 /* Info.plist */,
 				03552A6D1F26EE8900518BD3 /* Supporting Files */,
 			);
@@ -195,8 +250,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03552AAE1F26F1E200518BD3 /* rightImage220.jpg in Resources */,
+				03552AB01F26F1E200518BD3 /* rightImage345.jpg in Resources */,
+				03552AAF1F26F1E200518BD3 /* leftImage345.jpg in Resources */,
+				03552AB11F26F1E200518BD3 /* rightImage576.jpg in Resources */,
 				03552A7D1F26EE8A00518BD3 /* LaunchScreen.storyboard in Resources */,
+				03552AAD1F26F1E200518BD3 /* leftImage220.jpg in Resources */,
 				03552A7A1F26EE8A00518BD3 /* Assets.xcassets in Resources */,
+				03552AB21F26F1E200518BD3 /* leftImage576.jpg in Resources */,
 				03552A781F26EE8900518BD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,9 +276,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03552A941F26EF0900518BD3 /* LLSearchViewController.m in Sources */,
 				03552A751F26EE8900518BD3 /* ViewController.m in Sources */,
 				03552A721F26EE8900518BD3 /* AppDelegate.m in Sources */,
+				03552A9D1F26F02200518BD3 /* LLSearchView.m in Sources */,
+				03552A971F26EF9300518BD3 /* LLSearchResultViewController.m in Sources */,
+				03552AA31F26F10100518BD3 /* LLSearchResultListViewCell.m in Sources */,
+				03552A9A1F26EFCD00518BD3 /* LLSearchSuggestionVC.m in Sources */,
 				03552A6F1F26EE8900518BD3 /* main.m in Sources */,
+				03552AA61F26F12500518BD3 /* LLSearchResultDoubleViewCell.m in Sources */,
+				03552AA01F26F07B00518BD3 /* LLSearchResultView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +422,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36H94N4GDC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LLSearchView/LLSearchView.pch";
 				INFOPLIST_FILE = LLSearchView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangll.LLSearchView;
@@ -366,6 +436,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36H94N4GDC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LLSearchView/LLSearchView.pch";
 				INFOPLIST_FILE = LLSearchView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangll.LLSearchView;
@@ -377,6 +449,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 36H94N4GDC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LLSearchView/LLSearchView.pch";
 				INFOPLIST_FILE = LLSearchViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangll.LLSearchViewUITests;
@@ -389,6 +463,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 36H94N4GDC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LLSearchView/LLSearchView.pch";
 				INFOPLIST_FILE = LLSearchViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangll.LLSearchViewUITests;
@@ -416,6 +492,7 @@
 				03552A8E1F26EE8A00518BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03552A8F1F26EE8A00518BD3 /* Build configuration list for PBXNativeTarget "LLSearchViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +501,7 @@
 				03552A911F26EE8A00518BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
