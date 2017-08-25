@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="PrCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可以理解为加载命令，在加载Mach-O文件时会使用这里的数据来确定内存的分布以及相关的加载命令。比如我们的main函数的加载地址" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="In5-SA-E7a">
+                        <rect key="frame" x="10" y="10" width="300" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$79.9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fet-qG-gkc">
+                        <rect key="frame" x="10" y="51" width="35" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rN-1a-het">
+                        <rect key="frame" x="7" y="72" width="58" height="19"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="降$6.00" image="down_price">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2D-bB-Xt7">
+                        <rect key="frame" x="256" y="50" width="54" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="wfB-2W-Jvl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="立即购买"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="In5-SA-E7a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2nP-ZR-NgL"/>
+                    <constraint firstAttribute="bottom" secondItem="8rN-1a-het" secondAttribute="bottom" constant="5" id="4EM-BO-0Le"/>
+                    <constraint firstItem="fet-qG-gkc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Awo-2x-GBx"/>
+                    <constraint firstAttribute="trailing" secondItem="In5-SA-E7a" secondAttribute="trailing" constant="10" id="Efm-Ki-6hs"/>
+                    <constraint firstItem="8rN-1a-het" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="IMh-Br-jTI"/>
+                    <constraint firstItem="fet-qG-gkc" firstAttribute="top" secondItem="In5-SA-E7a" secondAttribute="bottom" constant="6" id="Rv0-yA-mNz"/>
+                    <constraint firstItem="8rN-1a-het" firstAttribute="top" secondItem="fet-qG-gkc" secondAttribute="bottom" constant="5" id="qdY-SM-G2P"/>
+                    <constraint firstItem="In5-SA-E7a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="toW-oW-IAV"/>
+                    <constraint firstAttribute="trailing" secondItem="g2D-bB-Xt7" secondAttribute="trailing" constant="10" id="vr7-jO-SdG"/>
+                    <constraint firstAttribute="bottom" secondItem="g2D-bB-Xt7" secondAttribute="bottom" constant="6.5" id="xO3-lx-dBT"/>
+                    <constraint firstItem="g2D-bB-Xt7" firstAttribute="top" secondItem="In5-SA-E7a" secondAttribute="bottom" constant="5" id="yUp-uX-aXW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="butNowCons" destination="wfB-2W-Jvl" id="njT-E7-XvZ"/>
+                <outlet property="buyNowB" destination="g2D-bB-Xt7" id="KgQ-OW-GdT"/>
+                <outlet property="downAB" destination="8rN-1a-het" id="frD-5H-80f"/>
+                <outlet property="goodsNameL" destination="In5-SA-E7a" id="Vob-qx-FkT"/>
+                <outlet property="priceL" destination="fet-qG-gkc" id="2NM-EB-TNH"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="80.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down_price" width="19" height="19"/>
+    </resources>
+</document>
