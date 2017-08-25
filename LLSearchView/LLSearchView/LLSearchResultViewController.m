@@ -32,7 +32,7 @@
 - (NSMutableArray *)searchArray
 {
     if (!_searchArray) {
-        self.searchArray = [NSMutableArray arrayWithObjects:@"芙丽芳丝补水保湿面膜", @"澳佳宝皇家玫瑰蚕丝面膜", @"科颜氏草本养颜面膜", @"自然乐园保湿控油小清新面膜", @"佰草集新七白面膜",@"美即水漾肌密补水保湿净化面", @"膜法世家白松露睡眠面膜", @"蜗牛玻尿酸蚕丝面膜", @"水密码补水保湿面膜", nil];
+        self.searchArray = [NSMutableArray arrayWithObjects:@"┃芙丽芳丝补水保湿面膜", @"澳佳宝皇家玫瑰蚕丝面膜", @"科颜氏草本养颜面膜", @"自然乐园保湿控油小清新面膜", @"佰草集新七白面膜",@"美即水漾肌密补水保湿净化面", @"膜法世家白松露睡眠面膜", @"蜗牛玻尿酸蚕丝面膜", @"水密码补水保湿面膜", nil];
     }
     return _searchArray;
 }
@@ -150,6 +150,8 @@
 - (void)presentVCFirstBackClick:(UIButton *)sender
 {
     [_searchBar resignFirstResponder];
+    //在pop出去的时候移除resultview，不然会有一瞬间的闪现
+    [_resultView removeFromSuperview];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
@@ -178,10 +180,13 @@
         //修改标题和标题颜色
         [cancleBtn setTitle:@"取消" forState:UIControlStateNormal];
         [cancleBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [cancleBtn addTarget:self action:@selector(cancelDidClick) forControlEvents:UIControlEventTouchUpInside];
+        
     }
     
     return YES;
 }
+
 
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
@@ -198,6 +203,7 @@
 {
     NSLog(@"searchBarShouldEndEditing");
     self.navigationItem.rightBarButtonItem = _rightItem;
+    
     _titleView.frame = CGRectMake(0, 7, self.view.frame.size.width - 44 * 2 - 16, 30);
     _searchBar.frame = CGRectMake(0, 0, CGRectGetWidth(_titleView.frame), 30);
     searchBar.showsCancelButton = NO;
@@ -213,6 +219,7 @@
 - (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
 {
     NSLog(@"searchBarTextDidEndEditing");
+    [self.view addSubview:self.resultView];
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
@@ -234,13 +241,14 @@
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
 {
     [self.searchBar resignFirstResponder];
-    self.navigationItem.rightBarButtonItem = _rightItem;
+    
     _titleView.frame = CGRectMake(0, 7, self.view.frame.size.width - 44 * 2 - 16, 30);
     _searchBar.frame = CGRectMake(0, 0, CGRectGetWidth(_titleView.frame), 30);
     searchBar.showsCancelButton = NO;
     _activity = NO;
     
     _searchSuggestVC.view.hidden = YES;
+    [self presentVCFirstBackClick:nil];
 }
 
 
@@ -252,21 +260,5 @@
 }
 
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

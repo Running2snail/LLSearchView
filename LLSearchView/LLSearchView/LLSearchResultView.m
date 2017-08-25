@@ -9,7 +9,8 @@
 #import "LLSearchResultView.h"
 #import "LLSearchResultListViewCell.h"
 #import "LLSearchResultDoubleViewCell.h"
-
+#import "TQSectionHeader.h"
+#import "PrCell.h"
 @interface LLSearchResultView ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *contentTableView;
@@ -63,7 +64,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -94,7 +95,8 @@
         } else {
             [cell configResultDoubleViewCellWithFirstTitle:_dataSource[row] secondTitle:_dataSource[row + 1]];
         }
-        return cell;
+//    PrCell *cell = [PrCell cellWithTableView:tableView];
+    return cell;
     }
 }
 
@@ -111,5 +113,33 @@
 {
     
 }
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    TQSectionHeader *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"header"];
+    if (!headerView) {
+        headerView = [[TQSectionHeader alloc] initWithReuseIdentifier:@"header"];
+    }
+    
+    if (section == 0) {
+        [headerView setFoldSectionHeaderViewWithTitle:@"┃吕布貂蝉" detail:@"9999" type: HeaderStyleWithDetail section:0 canFold:YES];
+    } else if (section == 1) {
+        [headerView setFoldSectionHeaderViewWithTitle:@"蜀国一身正气" detail:@"nil" type:HeaderStyleWithDetail section:1 canFold:YES];
+    } else if (section == 2){
+        [headerView setFoldSectionHeaderViewWithTitle:@"魏国甄姬" detail:@"90k" type:HeaderStyleWithDetail section:2 canFold:YES];
+    } else {
+        [headerView setFoldSectionHeaderViewWithTitle:@"东吴二乔" detail:@"777" type:HeaderStyleWithDetail section:3 canFold:YES];
+    }
+//    headerView.delegate = self;
+//    NSString *key = [NSString stringWithFormat:@"%d", (int)section];
+//    BOOL folded = [[_foldInfoDic valueForKey:key] boolValue];
+//    headerView.fold = folded;
+    return headerView;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 40;
+}
+
 
 @end
